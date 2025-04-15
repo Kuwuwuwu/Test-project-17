@@ -573,3 +573,171 @@ body {
 }
 
 /* Media */
+
+/* Адаптивность под планшеты и мобильные устройства */
+@media (max-width: 1280px) {
+
+  .container,
+  .about-techno__container,
+  .projects__container,
+  .analytic,
+  .team__list {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .techno-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .work__image {
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar__list {
+    flex-wrap: wrap;
+    gap: 8px;
+    width: auto;
+    height: auto;
+  }
+
+  .about-techno__container {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 16px;
+    text-align: center;
+  }
+
+  .subheader__title {
+    font-size: 48px;
+    line-height: 54px;
+    width: auto;
+    height: auto;
+  }
+
+  .techno__button {
+    margin: 20px auto;
+    width: 100%;
+  }
+
+  .projects__images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision-img,
+  .brain-img,
+  .screen-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .team__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    height: auto;
+  }
+
+  .description {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar__button {
+    width: 100%;
+  }
+
+  .about-us {
+    padding: 80px 24px;
+  }
+
+  .about-us__subtitle,
+  .about-us__description {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .analytic__items {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .footer__center {
+    position: static;
+    transform: none;
+  }
+
+  .footer__navbar {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subheader__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .text__description {
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .work__title {
+    font-size: 32px;
+  }
+
+  .work__text {
+    font-size: 16px;
+    padding-right: 0;
+  }
+
+  .work__button {
+    width: 100%;
+  }
+
+  .process__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .process {
+    margin: 0;
+    align-items: center;
+  }
+
+  .team__member {
+    width: 100%;
+  }
+
+  .member img {
+    width: 100%;
+    height: auto;
+  }
+}
