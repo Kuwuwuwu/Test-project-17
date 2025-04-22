@@ -422,12 +422,14 @@ body {
 
 .work__container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  max-width: 1100px;
-  margin: 0 auto;
+  align-items: center;
   gap: 40px;
-  max-width: 450px;
+  width: 100%;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .work__image {
@@ -648,6 +650,18 @@ body {
     height: auto;
   }
 
+  .analytic__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .analytic__item {
+    background-image: url(content/sms1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 24px;
+  }
+
   .team__title {
     font-size: 42px;
     padding: 100px 80px 40px 80px;
@@ -787,7 +801,23 @@ body {
 
   .analytic__items {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 24px;
+  }
+
+  .analytic__item {
+    background-image: url(content/sms1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 24px;
+    padding-left: 0;
+  }
+
+  .analytic__title {
+    font-size: 32px;
+  }
+
+  .analytic__subtitle {
+    font-size: 14px;
   }
 
   .team__title {
@@ -817,6 +847,43 @@ body {
     font-size: 14px;
   }
 
+  .our-work {
+    padding: 30px 15px;
+  }
+
+  .work__container {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .work__image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .work__content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .work__title {
+    font-size: 36px;
+  }
+
+  .work__text {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .work__button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+
   .footer__container {
     flex-direction: column;
     gap: 24px;
@@ -831,27 +898,6 @@ body {
   .footer__navbar {
     flex-direction: column;
     gap: 16px;
-  }
-
-  .work__title {
-    font-size: 32px;
-  }
-
-  .work__text {
-    font-size: 16px;
-  }
-
-  .work__button {
-    width: 100%;
-    max-width: 300px;
-    padding: 12px;
-    font-size: 1rem;
-  }
-
-  .work__image {
-    width: 700px;
-    height: 500px;
-    border-radius: 12px;
   }
 }
 
