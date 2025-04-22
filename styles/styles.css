@@ -637,17 +637,72 @@ body {
     height: auto;
   }
 
+  .team__title {
+    font-size: 42px;
+    padding: 100px 80px 40px 80px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 20px;
+    padding: 0 40px 40px 40px;
+    text-align: center;
+  }
+
   .team__list {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
-  .description {
-    padding: 16px;
+  .team__member {
+    width: 240px;
+    height: auto;
+  }
+
+  .member img {
+    width: 100%;
+    height: auto;
+  }
+
+  .member__name,
+  .about__member {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .work__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 100%;
+  }
+
+  .work__image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0;
+  }
+
+  .work__content {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .work__text {
+    padding: 16px 0;
+    padding-right: 0;
+  }
+
+  .work__title {
+    font-size: 42px;
   }
 }
+
 
 @media (max-width: 768px) {
   .container {
@@ -665,6 +720,50 @@ body {
     width: 100%;
   }
 
+  .about-techno__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .subheader__text {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    height: auto;
+  }
+
+  .subheader__title {
+    font-size: 48px;
+    line-height: 54px;
+    width: auto;
+    height: auto;
+  }
+
+  .text__description {
+    font-size: 18px;
+    padding-left: 0;
+    padding-top: 12px;
+    line-height: 26px;
+  }
+
+  .techno__button {
+    width: 100%;
+    margin: 24px 0;
+    padding: 14px 24px;
+    max-width: 300px;
+  }
+
+  .techno-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 24px;
+  }
+
   .about-us {
     padding: 80px 24px;
   }
@@ -678,6 +777,33 @@ body {
   .analytic__items {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .team__title {
+    font-size: 32px;
+    padding: 60px 20px 30px 20px;
+  }
+
+  .description {
+    font-size: 16px;
+    padding: 0 20px 30px 20px;
+  }
+
+  .team__member {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .team__list {
+    gap: 24px;
+  }
+
+  .member__name {
+    font-size: 16px;
+  }
+
+  .about__member {
+    font-size: 14px;
   }
 
   .footer__container {
@@ -695,7 +821,29 @@ body {
     flex-direction: column;
     gap: 16px;
   }
+
+  .work__title {
+    font-size: 32px;
+  }
+
+  .work__text {
+    font-size: 16px;
+  }
+
+  .work__button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .work__image {
+    width: 700px;
+    height: 500px;
+    border-radius: 12px;
+  }
 }
+
 
 @media (max-width: 480px) {
   .subheader__title {
@@ -715,6 +863,12 @@ body {
   .work__text {
     font-size: 16px;
     padding-right: 0;
+  }
+
+  .work__image {
+    max-width: 300px;
+    height: 200px;
+    border-radius: 12px;
   }
 
   .work__button {
